@@ -14,7 +14,17 @@ function NewPlantForm({ addPlant }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    addPlant(form);
+    fetch("http://localhost:6001/plants", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    })
+      .then((r) => r.json())
+      .then((plant) => {
+        addPlant(plant);
+      });
   }
 
   return (

@@ -41,6 +41,12 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "id": 8,
+      "name": "Moonshine Sansevieria",
+      "image": "https://cdn.shopify.com/s/files/1/1706/1307/products/Sansevieria-trifasciata-Moonshine-Snake-Plant-9cm.jpg?v=1643986438",
+      "price": "20"
     }
   ]
 }
